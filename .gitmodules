@@ -1,0 +1,3 @@
+[submodule "Tachyon/vendor/spdlog"]
+	path = Tachyon/vendor/spdlog
+	url = https://github.com/gabime/spdlog.git
