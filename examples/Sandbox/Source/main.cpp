@@ -1,8 +1,13 @@
-#include "tachyon.h"
+#include "Tachyon.h"
 
-int main()
+class Sandbox : public Tachyon::Application
 {
-    Print();
+public:
+    Sandbox() {}
+    ~Sandbox() {}
+};
 
-    return 0;
+Tachyon::Application* Tachyon::CreateApplication()
+{
+    return new Sandbox;
 }
