@@ -1,8 +1,8 @@
 CXX = g++
 CXXFLAGS = -fPIC -Wall
 BUILD_DIR = bin
-SRC_DIR = Tachyon/src/Tachyon
-SOURCES = $(wildcard $(SRC_DIR)/*.cpp)
+SRC_DIR = Tachyon/src
+SOURCES = $(shell find $(SRC_DIR) -name '*.cpp')
 OBJECTS = $(SOURCES:.cpp=.o)
 TARGET = libtachyon.so
 
