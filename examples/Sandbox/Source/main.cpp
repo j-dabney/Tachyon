@@ -9,5 +9,6 @@ public:
 
 TachyonEngine::Application* TachyonEngine::CreateApplication()
 {
+    TC_INFO("Sandbox started.");
     return new Sandbox;
 }
