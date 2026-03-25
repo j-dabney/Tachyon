@@ -1,8 +1,8 @@
-#include "Log.h"
+#include "Log.hpp"
 
 #include "spdlog/sinks/stdout_color_sinks.h"
 
-namespace Tachyon {
+namespace TachyonEngine {
 
 std::shared_ptr<spdlog::logger> Log::s_coreLogger;
 std::shared_ptr<spdlog::logger> Log::s_clientLogger;

@@ -2,7 +2,7 @@
 
 int main(int argc, char** argv);
 
-namespace Tachyon {
+namespace TachyonEngine {
 
 class Application
 {

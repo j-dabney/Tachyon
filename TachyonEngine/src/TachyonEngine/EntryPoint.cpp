@@ -1,15 +1,15 @@
-#include "EntryPoint.h"
-#include "Log.h"
+#include "EntryPoint.hpp"
+#include "Log.hpp"
 
 
 int main(int argc, char** argv)
 {
-    Tachyon::Log::Init();
+    TachyonEngine::Log::Init();
     TC_CORE_INFO("Initialized Log!");
     int a = 5;
     TC_WARN("Uh oh. Var={0}", a);
 
-    auto app = Tachyon::CreateApplication();
+    auto app = TachyonEngine::CreateApplication();
     app->Run();
     delete app;
 }

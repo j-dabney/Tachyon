@@ -1,13 +1,13 @@
-#include "Tachyon.h"
+#include "TachyonEngine.hpp"
 
-class Sandbox : public Tachyon::Application
+class Sandbox : public TachyonEngine::Application
 {
 public:
     Sandbox() {}
     ~Sandbox() {}
 };
 
-Tachyon::Application* Tachyon::CreateApplication()
+TachyonEngine::Application* TachyonEngine::CreateApplication()
 {
     return new Sandbox;
 }
