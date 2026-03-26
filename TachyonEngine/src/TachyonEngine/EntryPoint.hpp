@@ -1,11 +1,20 @@
 #pragma once
 
+#include "PlatformDetection.h"
 #include "Application.hpp"
 
-#ifndef __linux__
-    #error "TachyonEngine only support Linux at this time"
-#endif
+#ifdef TC_PLATFORM_WINDOWS
 
-TachyonEngine::Application* TachyonEngine::CreateApplication();
+extern TachyonEngine::Application* TachyonEngine::CreateApplication();
 
 int main(int argc, char** argv);
+
+#endif
+
+#ifdef TC_PLATFORM_LINUX
+
+extern TachyonEngine::Application* TachyonEngine::CreateApplication();
+
+int main(int argc, char** argv);
+
+#endif

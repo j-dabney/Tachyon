@@ -2,7 +2,9 @@
 
 #include <memory>
 
+#pragma warning(push, 0)
 #include "spdlog/spdlog.h"
+#pragma warning(pop)
 
 namespace TachyonEngine {
 
@@ -26,11 +28,11 @@ public:
 #define TC_CORE_INFO(...)     ::TachyonEngine::Log::GetCoreLogger()->info(__VA_ARGS__)
 #define TC_CORE_WARN(...)     ::TachyonEngine::Log::GetCoreLogger()->warn(__VA_ARGS__)
 #define TC_CORE_ERROR(...)    ::TachyonEngine::Log::GetCoreLogger()->error(__VA_ARGS__)
-#define TC_CORE_FATAL(...)    ::TachyonEngine::Log::GetCoreLogger()->fatal(__VA_ARGS__)
+#define TC_CORE_CRITICAL(...) ::TachyonEngine::Log::GetCoreLogger()->critical(__VA_ARGS__)
 
 // Client Log Macros
 #define TC_TRACE(...)         ::TachyonEngine::Log::GetClientLogger()->trace(__VA_ARGS__)
 #define TC_INFO(...)          ::TachyonEngine::Log::GetClientLogger()->info(__VA_ARGS__)
 #define TC_WARN(...)          ::TachyonEngine::Log::GetClientLogger()->warn(__VA_ARGS__)
 #define TC_ERROR(...)         ::TachyonEngine::Log::GetClientLogger()->error(__VA_ARGS__)
-#define TC_FATAL(...)         ::TachyonEngine::Log::GetClientLogger()->fatal(__VA_ARGS__)
+#define TC_CRITICAL(...)      ::TachyonEngine::Log::GetClientLogger()->critical(__VA_ARGS__)
