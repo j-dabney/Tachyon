@@ -1,6 +1,6 @@
 #pragma once
 
-#include "PlatformDetection.h"
+#include "PlatformDetection.hpp"
 #include "Application.hpp"
 
 #ifdef TC_PLATFORM_WINDOWS
